@@ -8,7 +8,7 @@ import pickle
 # load the model from disk
 filename = 'nlp_model.pkl'
 clf = pickle.load(open('nlp_model_new.pkl','rb'))
-cv=pickle.load(open('tweet_tranform_new.pkl','rb'))
+cv=pickle.load(open('tweet_tranform_xgb.pkl','rb'))
 app = Flask(__name__)
 
 @app.route('/')
